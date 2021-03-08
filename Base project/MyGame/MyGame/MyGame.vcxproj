@@ -87,6 +87,9 @@
     <ClCompile Include="Engine\GameObject.cpp" />
     <ClCompile Include="Engine\Scene.cpp" />
     <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="Laser2.cpp" />
+    <ClCompile Include="Laser3.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="Ship.cpp" />
   </ItemGroup>
@@ -97,13 +100,17 @@
     <ClInclude Include="Engine\GameObject.h" />
     <ClInclude Include="Engine\Scene.h" />
     <ClInclude Include="GameScene.h" />
-    <ClInclude Include="ship.h" />
+    <ClInclude Include="Laser.h" />
+    <ClInclude Include="Laser2.h" />
+    <ClInclude Include="Laser3.h" />
+    <ClInclude Include="Ship.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Resources\sprite.png" />
+    <Image Include="Resources\laser.png" />
+    <Image Include="Resources\ship.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

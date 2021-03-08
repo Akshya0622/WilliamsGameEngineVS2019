@@ -16,6 +16,15 @@
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="Laser.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser2.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser3.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -34,7 +43,16 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="GameScene.h" />
-    <ClInclude Include="ship.h" />
+    <ClInclude Include="Ship.h" />
+    <ClInclude Include="Laser.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser2.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser3.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -50,7 +68,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Resources\sprite.png">
+    <Image Include="Resources\ship.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Resources\laser.png">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>
