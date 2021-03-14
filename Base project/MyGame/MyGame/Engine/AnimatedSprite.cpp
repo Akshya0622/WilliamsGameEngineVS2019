@@ -5,7 +5,7 @@
 // Construct the AnimatedSprite and set its initial position.
 AnimatedSprite::AnimatedSprite(sf::Vector2f position, int msPerFrame) :
 	msPerFrame_(msPerFrame),
-	isPlaying_(false)
+	isPlaying_()
 {
 	setPosition(position);
 }

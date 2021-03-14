@@ -8,6 +8,7 @@
 
 // This controlls how fast animations are by default.
 // It specifies how long each frame is displayed on the screen.
+
 const int DEFAULT_MS_PER_FRAME = 20;
 
 // Specifies how to play an animation.

@@ -29,6 +29,7 @@ public:
 	bool isCollisionCheckEnabled();
 	void setCollisionCheckEnabled(bool isCollisionCheckEnabled);
 
+
 	// This function lets you specify a rectangle for collision checks.
 	virtual sf::FloatRect getCollisionRect() { return sf::FloatRect(); }
 
@@ -43,7 +44,7 @@ private:
 	std::set<std::string> tags_;
 
 	bool isDead_ = false;
-	bool isCollisionCheckEnabled_ = false;
+	bool isCollisionCheckEnabled_ = true;
 };
 
 typedef std::shared_ptr<GameObject> GameObjectPtr;
