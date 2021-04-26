@@ -40,7 +40,6 @@ void Meteor::handleCollision(GameObject& otherGameObject)
 	{
 		sf::Vector2f pos = sprite_.getPosition();
 		ExplosionPtr ex = std::make_shared<Explosion>(pos);
-		sf::Time t = sf::milliseconds(3000);
 		GAME.getCurrentScene().addGameObject(ex);
 		otherGameObject.makeDead();
 	}
