@@ -8,5 +8,5 @@ GameScene::GameScene()
 	addGameObject(ship);
 	MeteorSpawnerPtr meteorSpawner = std::make_shared<MeteorSpawner>();
 	addGameObject(meteorSpawner);
-	
+
 }

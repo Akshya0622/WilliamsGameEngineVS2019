@@ -4,7 +4,7 @@ class Meteor : public GameObject
 {
 public:
 
-	Meteor(sf::Vector2f pos);	// Creates our Meteor.
+	Meteor(sf::Vector2f pos);	// 
 	
 	void draw();
 	void update(sf::Time& elapsed);

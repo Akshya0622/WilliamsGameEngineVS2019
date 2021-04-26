@@ -1,8 +1,6 @@
 #include "Ship.h"
 #include "Laser.h"
 #include <memory>
-#include "Laser2.h"
-#include "Laser3.h"
 
 const float SPEED = 0.5f;
 const int FIRE_DELAY = 200;
@@ -38,16 +36,11 @@ void Ship::update(sf::Time& elapsed)
 		sf::FloatRect bounds = sprite_.getGlobalBounds();
 		float laserX = x + bounds.width;
 		float laserY = y + (bounds.height / 2.0f);
-		float laserX2 = x + bounds.width;
-		float laserY2= y + bounds.height;
-		float laserX3 = x + bounds.width;
-		float laserY3 = y + (2.0f / bounds.height);
+		
 		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
-		LaserPtr2 laser2 = std::make_shared<Laser2>(sf::Vector2f(laserX2, laserY2));
-		LaserPtr3 laser3 = std::make_shared<Laser3>(sf::Vector2f(laserX3, laserY3));
+		
 		GAME.getCurrentScene().addGameObject(laser);
-		GAME.getCurrentScene().addGameObject(laser2);
-		GAME.getCurrentScene().addGameObject(laser3);
+	
 
 	}
 }

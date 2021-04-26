@@ -19,12 +19,6 @@
     <ClCompile Include="Laser.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="Laser2.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="Laser3.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="Meteor.cpp" />
     <ClCompile Include="MeteorSpawner.cpp" />
     <ClCompile Include="Explosion.cpp" />
@@ -48,12 +42,6 @@
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Ship.h" />
     <ClInclude Include="Laser.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Laser2.h">
-      <Filter>Engine</Filter>
-    </ClInclude>
-    <ClInclude Include="Laser3.h">
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="Meteor.h" />
