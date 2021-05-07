@@ -25,6 +25,8 @@
     <ClCompile Include="Score.cpp" />
     <ClCompile Include="GameOverMessage.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
+    <ClCompile Include="background.cpp" />
+    <ClCompile Include="SpawnBackground.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -53,6 +55,8 @@
     <ClInclude Include="Score.h" />
     <ClInclude Include="GameOverMessage.h" />
     <ClInclude Include="GameOverScene.h" />
+    <ClInclude Include="background.h" />
+    <ClInclude Include="SpawnBackground.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -75,6 +79,9 @@
       <Filter>Resources</Filter>
     </Image>
     <Image Include="Resources\explosion-spritesheet.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Resources\space-game-background_7814-427.jpg">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>
