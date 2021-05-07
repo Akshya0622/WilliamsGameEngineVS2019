@@ -10,15 +10,16 @@
 GameScene::GameScene()
 {
 	
-	backgroundPtr scenes = std::make_shared<background>();
-	addGameObject(scenes);
-	ShipPtr ship = std::make_shared<Ship>();
-	addGameObject(ship);
+	
+	
 	MeteorSpawnerPtr meteorSpawner = std::make_shared<MeteorSpawner>();
 	addGameObject(meteorSpawner);
 	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));
 	addGameObject(score);
-	
+	backgroundPtr scenes = std::make_shared<background>();
+	addGameObject(scenes);
+	ShipPtr ship = std::make_shared<Ship>();
+	addGameObject(ship);
 }
 
 int GameScene::getScore()

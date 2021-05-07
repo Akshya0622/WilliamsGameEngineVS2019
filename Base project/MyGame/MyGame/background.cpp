@@ -16,13 +16,13 @@ void background::draw()
 }
 void background::update(sf::Time& elapsed)
 {
-	
+
 	
 		int msElapsed = elapsed.asMilliseconds();
 		
 		sf::Vector2f pos = sprite_.getPosition();
 
-			sprite_.setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
+		sprite_.setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
 		
 
 	

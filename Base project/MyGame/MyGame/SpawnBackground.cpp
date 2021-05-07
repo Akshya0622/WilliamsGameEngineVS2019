@@ -1,6 +1,6 @@
 #include "SpawnBackground.h"
 
-const int SPAWN_DELAY = 5000;
+const int SPAWN_DELAY = 1000;
 
 
 void SpawnBackground::update(sf::Time& elapsed)
@@ -14,11 +14,10 @@ void SpawnBackground::update(sf::Time& elapsed)
 
 		
 		float backX = (float)(size.x);
-
-		
 		float backY = (float)(size.y);
 
-		
+		//backgroundPtr scene = std::make_shared<background>(sf::Vector2f(backX, backY));
+		//GAME.getCurrentScene().addGameObject(scene);
 		
 	}
 }
