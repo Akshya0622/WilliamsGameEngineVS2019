@@ -11,6 +11,7 @@ public:
 
 private:
 	sf::Sprite sprite_;
+	sf::Sprite sprite2_;
 	int timer_ = 0;
 };
 

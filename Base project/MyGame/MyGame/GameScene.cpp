@@ -5,7 +5,7 @@
 #include "Score.h"
 #include "GameOverScene.h"
 #include "background.h"
-#include "SpawnBackground.h"
+
 
 GameScene::GameScene()
 {
