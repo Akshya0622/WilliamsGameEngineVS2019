@@ -72,6 +72,8 @@ void Scene::handleCollisions()
 			}
 		}
 	}
+
+	
 }
 
 // This function calls update on each of our game objects.

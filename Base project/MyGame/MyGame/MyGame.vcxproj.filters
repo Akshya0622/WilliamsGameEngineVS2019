@@ -26,6 +26,8 @@
     <ClCompile Include="GameOverMessage.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="background.cpp" />
+    <ClCompile Include="ShootingStars.cpp" />
+    <ClCompile Include="ShootingStarSpawner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -55,6 +57,8 @@
     <ClInclude Include="GameOverMessage.h" />
     <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="background.h" />
+    <ClInclude Include="ShootingStars.h" />
+    <ClInclude Include="ShootingStarSpawner.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -80,6 +84,12 @@
       <Filter>Resources</Filter>
     </Image>
     <Image Include="Resources\background.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Resources\star.jfif">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="Resources\shootingstar.png">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>

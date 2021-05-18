@@ -97,6 +97,8 @@
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="Score.cpp" />
     <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="ShootingStars.cpp" />
+    <ClCompile Include="ShootingStarSpawner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="background.h" />
@@ -114,6 +116,8 @@
     <ClInclude Include="MeteorSpawner.h" />
     <ClInclude Include="Score.h" />
     <ClInclude Include="Ship.h" />
+    <ClInclude Include="ShootingStars.h" />
+    <ClInclude Include="ShootingStarSpawner.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\README.md" />
@@ -122,6 +126,8 @@
     <Image Include="Resources\background.png" />
     <Image Include="Resources\explosion-spritesheet.png" />
     <Image Include="Resources\laser.png" />
+    <Image Include="Resources\shootingstar.png" />
+    <Image Include="Resources\star.jfif" />
     <Image Include="Resources\ship.png" />
   </ItemGroup>
   <ItemGroup>

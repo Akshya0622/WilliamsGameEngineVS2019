@@ -5,6 +5,7 @@
 #include "Score.h"
 #include "GameOverScene.h"
 #include "background.h"
+#include "ShootingStarSpawner.h"
 
 
 GameScene::GameScene()
@@ -20,6 +21,8 @@ GameScene::GameScene()
 	addGameObject(scenes);
 	ShipPtr ship = std::make_shared<Ship>();
 	addGameObject(ship);
+	ShootingStarSpawnerPtr starSpawner = std::make_shared<ShootingStarSpawner>();
+	addGameObject(starSpawner);
 }
 
 int GameScene::getScore()
@@ -43,4 +46,10 @@ void GameScene::decreaseLives()
 		GameOverScenePtr gameOverScene = std::make_shared<GameOverScene>(score_);
 		GAME.setScene(gameOverScene);
 	}
+}
+
+void GameScene::increaseLives()
+{
+	lives_ += 1;
+
 }

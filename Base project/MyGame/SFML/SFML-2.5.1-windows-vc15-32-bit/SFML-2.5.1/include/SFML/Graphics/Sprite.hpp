@@ -188,6 +188,7 @@ public:
     ///
     ////////////////////////////////////////////////////////////
     FloatRect getGlobalBounds() const;
+    FloatRect getGlobalBounds2() const;
 
 private:
 
