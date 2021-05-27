@@ -88,6 +88,7 @@
     <ClCompile Include="Engine\GameObject.cpp" />
     <ClCompile Include="Engine\Scene.cpp" />
     <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="Explosion2.cpp" />
     <ClCompile Include="GameOverMessage.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
@@ -109,6 +110,7 @@
     <ClInclude Include="Engine\GameObject.h" />
     <ClInclude Include="Engine\Scene.h" />
     <ClInclude Include="Explosion.h" />
+    <ClInclude Include="Explosion2.h" />
     <ClInclude Include="GameOverMessage.h" />
     <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="GameScene.h" />
@@ -128,9 +130,13 @@
     <Image Include="..\..\..\..\..\..\Desktop\spritesheet.png" />
     <Image Include="Resources\background.png" />
     <Image Include="Resources\bigExplosion.png" />
+    <Image Include="Resources\back.png" />
     <Image Include="Resources\explosion-spritesheet.png" />
     <Image Include="Resources\laser.png" />
+    <Image Include="Resources\ex2.png" />
+    <Image Include="Resources\meteors.png" />
     <Image Include="Resources\shootingstar.png" />
+    <Image Include="Resources\shipSprite.png" />
     <Image Include="Resources\star.jfif" />
     <Image Include="Resources\ship.png" />
   </ItemGroup>
@@ -138,6 +144,7 @@
     <Media Include="Resources\boom.wav" />
   </ItemGroup>
   <ItemGroup>
+    <Font Include="Resources\AgentOrange.ttf" />
     <Font Include="Resources\Courneuf-Regular.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

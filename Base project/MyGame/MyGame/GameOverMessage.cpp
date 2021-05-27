@@ -3,12 +3,12 @@
 #include <sstream>
 GameOverMessage::GameOverMessage(int score)
 {
-	text_.setFont(GAME.getFont("Resources/Courneuf-Regular.ttf"));
+	text_.setFont(GAME.getFont("Resources/AgentOrange.ttf"));
 	text_.setPosition(sf::Vector2f(50.0f, 50.0f));
-	text_.setCharacterSize(48);
+	text_.setCharacterSize(30);
 	text_.setFillColor(sf::Color::Red);
 	std::stringstream stream;
-	stream << "GAME OVER\n\nYOUR SCORE: " << score << "\n\nPRESS ENTER TO CONTINUE"; 
+	stream << "\n\n\n             GAME OVER\n\n           YOUR SCORE: " << score << "\n\n     PRESS ENTER TO CONTINUE"; 
 	text_.setString(stream.str());
 }
 void GameOverMessage::draw()

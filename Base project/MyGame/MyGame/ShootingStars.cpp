@@ -9,7 +9,7 @@ ShootingStars::ShootingStars(sf::Vector2f pos)
 {
 	sprite_.setTexture(GAME.getTexture("Resources/shootingstar.png"));
 	sprite_.setPosition(pos);
-	sprite_.setScale(.3, .3);
+	sprite_.setScale(.5, .5);
 	assignTag("star");
 }
 void ShootingStars::draw()

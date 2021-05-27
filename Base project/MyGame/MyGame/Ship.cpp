@@ -6,7 +6,8 @@ const float SPEED = 0.5f;
 const int FIRE_DELAY = 200;
 Ship::Ship()
 {
-	sprite_.setTexture(GAME.getTexture("Resources/ship.png"));
+	sprite_.setTexture(GAME.getTexture("Resources/shipSprite.png"));
+	sprite_.setScale(.15, .15);
 	sprite_.setPosition(sf::Vector2f(100, 100));
 	assignTag("ship");
 }
@@ -35,13 +36,15 @@ void Ship::update(sf::Time& elapsed)
 	{
 		fireTimer_ = FIRE_DELAY;
 		sf::FloatRect bounds = sprite_.getGlobalBounds();
-		float laserX = x + bounds.width;
-		float laserY = y + (bounds.height / 2.0f);
+		float laserX = x + bounds.width - 100;
+		float laserY = y + (bounds.height - 100);
+		float laser2X = x + bounds.width - 110;
+		float laser2Y = y + (bounds.height - 20);
 		
 		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
-		
+		LaserPtr laser2 = std::make_shared<Laser>(sf::Vector2f(laser2X, laser2Y));
 		GAME.getCurrentScene().addGameObject(laser);
-	
+		GAME.getCurrentScene().addGameObject(laser2);
 
 	}
 }
